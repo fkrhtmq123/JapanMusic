@@ -1,0 +1,323 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '고딕';
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+/* header */
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #d5d5d5;
+    z-index: 100;
+}
+header > .main {
+    float: left;
+    height: 100%;
+}
+header > .main.logo {
+    width: 15%;
+}
+header > .main.logo > a {
+    width: 100%;
+    height: 100%;
+}
+header > .main.logo > a > img {
+    width: 100%;
+    height: 100%;
+}
+header > .main.menu {
+    width: 70%;
+    line-height: 110px;
+}
+header > .main.menu > ul {
+    width: 100%;
+    height: 100%;
+}
+header > .main.menu > ul > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+header > .main.menu > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 100px;
+}
+header > .main.menu > ul > li > a:hover {
+    border-bottom: 2px solid #111;
+}
+header > .main.menu > ul > li > ol > li > a:hover {
+    font-weight: bold;
+}
+header > .main.menu > ul > li:first-child > ol {
+    border-left: 1px solid #d5d5d5;
+}
+header > .main.menu > ul > li > ol {
+    display: none;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    z-index: 1000;
+}
+header > .main.menu > ul > li > ol > li {
+    height: 40px;
+    text-align: center;
+}
+header > .main.menu > ul > li > ol > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 37px;
+}
+header > .main.member {
+    width: 15%;
+    line-height: 110px;
+    text-align: center;
+}
+header > .main.member > div {
+    margin-top: 40px;
+}
+header > .main.member > div > a {
+    display: inline-block;
+    width: 20%;
+}
+header > .main.member > div > a {}
+header > .main.member > div > a > i {
+    font-size: 25px;
+}
+header > .main.member > div > ul {
+    position: absolute;
+    top: 65.5%; right: 5.5%;
+    display: none;
+    width: 60px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #ece7e7;
+}
+header > .main.member > div > a:nth-child(2):hover + ul {
+    display: block;
+}
+header > .main.member > div > ul:hover {display: block;}
+header > .main.member > div > ul > li {
+    margin-top: 5px;
+}
+header > .main.member > div > ul > li > a:hover {
+    font-weight: bold;
+}
+/* main */
+body {
+    padding-top: 100px;
+    z-index: 1;
+}
+main {
+    height: auto;
+}
+main > .slider {
+    height: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: #fff;
+    z-index: 1;
+}
+main > .content {
+    width: 1340px;
+    height: auto;
+    min-height: 500px;
+    margin: 0 auto;
+}
+main .string_instrument {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    padding: 0 15px;
+    color: #fff;
+    background: #111;
+    box-sizing: border-box;
+}
+main .string_instrument > p {
+    position: absolute;
+    top: 35px;
+    font-size: 30px;
+    font-weight: bold;
+}
+main .string_instrument > span {
+    display: block;
+    position: absolute;
+    top: 80px;
+    font-size: 16px;
+}
+main .string_instrument > img {
+    position: absolute;
+    right: 15px; top: 0;
+    height: 150px;
+}
+main .banner {
+    margin-top: 100px;
+}
+main .banner > div {}
+main .banner > div > ul {
+    overflow: hidden;
+}
+main .banner > div > ul > li {
+    float: left;
+    height: 230px;
+    margin-left: 35px;
+}
+main .banner > div > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+main .banner > div > ul > li > a:hover {
+    background: #d5d5d5;
+}
+main .banner > div > ul > li > a > img {}
+main > .content > div:last-child {
+    width: 100%;
+    height: 230px;
+    margin: 50px 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+main > .content > div:last-child > div {
+    width: 45%;
+    height: auto;
+}
+main > .content > div:last-child > div > h3 {
+    display: inline-block;
+    font-size: 25px;
+}
+main > .content > div:last-child > div > p {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+}
+main > .content > div:last-child > div > p > span {
+    margin-right: 10px;
+}
+main > .content > div:last-child > div > p > i {}
+main > .content > div:last-child > div > ul {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+main > .content > div:last-child > div > ul > li {
+    width: 100%;
+    height: auto;
+}
+main > .content > div:last-child > div > ul > li > a {
+    float: left;
+    display: block;
+    width: 80%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+main > .content > div:last-child > div > ul > li > span {
+    float: right;
+    font-size: 14px;
+}
+main > .content > div:last-child > .qna {
+    float: left;
+}
+main > .content > div:last-child > .notice {
+    float: right;
+}
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+}
+footer > section {
+    width: 1340px;
+    height: auto;
+    margin: 0 auto;
+}
+footer > section:first-child {
+    width: 100%;
+    background-color: #3c3c3c;
+}
+footer > section > .introduce {
+    position: relative;
+    width: 1340px;
+    height: 50px;
+    margin: 0 auto;
+}
+footer > section > .introduce > ul {
+    position: absolute;
+    top: 15px;
+}
+footer > section > .introduce > ul > li {
+    float: left;
+    padding: 0 20px;
+    border-right: 1px solid #fff;
+}
+footer > section > .introduce > ul > li > a {
+    color: #fff; 
+}
+footer > section > .companyinfo {
+    height: auto;
+    margin-top: 15px;
+}
+footer > section > .companyinfo > div {
+    height: auto;
+    padding: 18px 0;
+    overflow: hidden;
+}
+footer > section > .companyinfo > div > div {
+    float: left;
+    width: 30%;
+    height: 130px;
+    padding-left: 15px;
+    border-right: 1px solid #d5d5d5;
+}
+footer > section > .companyinfo > div > ul {
+    float: left;
+    width: 30%;
+    height: 150px;
+    margin-left: 15px;
+}
+footer > section > .companyinfo > div > ul > li {}
+footer > section > .companyinfo > div > ul > li > span {
+    float: right;
+}
+footer > section > .companyinfo > .info {
+    border-top: 1px solid #d5d5d5;
+    color: #757575;
+    padding: 15px 0 0 15px;
+}
+footer > section > .companyinfo > .info > p {
+    line-height: 25px;
+}
+footer > section > .companyinfo > div h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+footer > section > .companyinfo > div strong {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+footer > section > .companyinfo > div p {
+    color: #757575;
+    font-size: 15px;
+    line-height: 25px;
+}
