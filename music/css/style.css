@@ -440,4 +440,329 @@ footer > section > .companyinfo > div p {
     padding-top: 7px;
     box-sizing: border-box;
 }
+/* terms */
+.terms > section {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.terms .select {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.terms .select > h3 {
+    float: left;
+}
+.terms .select > span {
+    float: left;
+    margin-left: 5px;
+    font-weight: bold
+}
+.terms .content_box {
+    width: 100%;
+    margin-top: 30px;
+}
+.terms .content_box > .title {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.terms .content_box > div > h4 {
+    float: left;
+    font-size: 28px;
+}
+.terms .content_box > div > div {
+    float: right;
+    margin-top: 20px;
+}
+.terms .content_box > div > div > label:nth-child(1) i {color: red;}
+.terms .content_box > div > div > label:nth-child(2) {color: #d5d5d5;}
+.terms .content_box > div > div > label:nth-child(3) {color: #d5d5d5;}
+.terms .content_box > div > div > label > span {
+    font-size: 16px;
+}
+.terms .content_box > div > div > label > span:first-child {
+    font-weight: bold;
+}
+.terms .content_box > div > div > label > span > i {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.terms .content_box > .member_terms {
+    width: 880px;
+    margin: 60px auto 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.terms .content_box > .member_terms > div {
+    width: 100%;
+    margin: 0;
+}
+.terms .content_box > .member_terms > div:first-child {
+    border-bottom: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+}
+.terms .content_box > .member_terms > div:first-child > h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.terms .content_box > .member_terms > div > input[type=checkbox] {
+    float: left;
+    width: 15px;
+    height: 15px;
+}
+.terms .content_box > .member_terms > div > div {
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.terms .content_box > .member_terms > div > div > span {
+    color: red;
+}
+.terms .content_box > .member_terms > div > div > em {}
+.terms .content_box > .member_terms > div > textarea {
+    float: left;
+    width: 99%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.terms .content_box > .member_terms > div:last-child > span {
+    margin-left: 10px;
+}
+.terms .content_box > .member_terms > div:last-child > span > p {
+    margin-left: 135px;
+    margin-top: -16px;
+    color: #757575;
+}
+.terms .content_box > div:last-child {
+    width: 880px;
+    padding: 40px;
+    margin: 0 auto;
+}
+.terms .content_box > div:last-child > a {
+    display: block;
+    width: 130px;
+    height: 60px;
+    margin: 0 auto;
+    border: 1px solid #111;
+    text-align: center;
+    line-height: 55px;
+    font-size: 18px;
+    background: #d5d5d5;
+}
 /* register */
+.register > section {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.register .select {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.register .select > h3 {
+    float: left;
+}
+.register .select > span {
+    float: left;
+    margin-left: 5px;
+    font-weight: bold
+}
+.register .content_box {
+    width: 100%;
+    margin-top: 30px;
+}
+.register .content_box > .title {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.register .content_box > div > h4 {
+    float: left;
+    font-size: 28px;
+}
+.register .content_box > div > div {
+    float: right;
+    margin-top: 20px;
+}
+.register .content_box > div > div > label:nth-child(1) {color: #d5d5d5;}
+.register .content_box > div > div > label:nth-child(2) i {color: red;}
+.register .content_box > div > div > label:nth-child(3) {color: #d5d5d5;}
+.register .content_box > div > div > label > span {
+    font-size: 16px;
+}
+.register .content_box > div > div > label > span:first-child {
+    font-weight: bold;
+}
+.register .content_box > div > div > label > span > i {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.register .content_box > section {
+    width: 934px;
+    height: auto;
+    margin: 80px auto 0 auto;
+}
+.register .content_box > section > div:first-child {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.register .content_box > section > div:first-child > h5 {
+    font-size: 28px;
+}
+.register .content_box > section > div:first-child > label {
+    float: right;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+.register .content_box > section > form > .member_register {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+.register .content_box > section > form > .member_register > table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.register .content_box > section > form > .member_register > table tr {
+    border-bottom: 1px solid #d5d5d5;
+}
+.register .content_box > section > form > .member_register > table tr:first-child {
+    border-top: 1px solid #757575;
+}
+.register .content_box > section > form > .member_register > table tr > td {
+    padding: 10px;
+}
+.register .content_box > section > form > .member_register > table tr > td:first-child {
+    width: 200px;
+    text-align: left;
+    background: #f7f4f4;
+}
+.register .content_box > section > form > .member_register > table tr > td > strong {}
+.register .content_box > section > form > .member_register > table tr > td > span {
+    font-size: 16px;
+    margin-left: 10px;
+}
+.register .content_box > section > form > .member_register > table tr > td > input {
+    width: 400px;
+    height: 30px;
+    padding: 0 10px;
+}
+.asterisk {
+    color: red;
+}
+.register .content_box > section > form > .member_register > table tr > td > input[name=zip] {
+    width: 200px;
+}
+.register .content_box > section > form > .member_register > table tr > td > input[type=button] {
+    width: 70px;
+}
+.register .content_box > section > form > .member_register > table tr > td > input:nth-child(3) {
+    margin-top: 10px;
+}
+.register .content_box > section > form > .member_register > table tr > td > input:nth-child(4) {
+    margin-top: 10px;
+}
+.register .content_box > section > form > .resultbtn {
+    width: 100%;
+    height: auto;
+    padding: 50px 350px;
+    box-sizing: border-box;
+}
+.register .content_box > section > form > .resultbtn > input[type=submit] {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+}
+/* register-complete*/
+.register_complete > section {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.register_complete .select {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.register_complete .select > h3 {
+    float: left;
+}
+.register_complete .select > span {
+    float: left;
+    margin-left: 5px;
+    font-weight: bold
+}
+.register_complete .content_box {
+    width: 100%;
+    margin-top: 30px;
+}
+.register_complete .content_box > .title {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.register_complete .content_box > div > h4 {
+    float: left;
+    font-size: 28px;
+}
+.register_complete .content_box > div > div {
+    float: right;
+    margin-top: 20px;
+}
+.register_complete .content_box > div > div > label:nth-child(1) {color: #d5d5d5;}
+.register_complete .content_box > div > div > label:nth-child(2) {color: #d5d5d5;}
+.register_complete .content_box > div > div > label:nth-child(3) {}
+.register_complete .content_box > div > div > label > span {
+    font-size: 16px;
+}
+.register_complete .content_box > div > div > label > span:first-child {
+    font-weight: bold;
+}
+.register_complete .content_box > div > div > label > span > i {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.register_complete .content_box > section {
+    width: 100%;
+    height: auto;
+}
+.register_complete .content_box > section > .member_result {
+    padding: 100px 400px;
+}
+.register_complete .content_box > section > .member_result > p {
+    font-size: 40px;
+}
+.register_complete .content_box > section > .member_result > p > i {
+    font-size: 40px;
+}
+.register_complete .content_box > section > .member_result > span {
+    font-size: 20px;
+    margin-left: 80px;
+}
+.register_complete .content_box > section > button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 550px;
+    margin-bottom: 100px;
+}

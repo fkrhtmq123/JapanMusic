@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GalopMusic</title>
+    <title>GalaxyMusic</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script><!--최신 폰트어썸-->
@@ -28,7 +28,7 @@
     <div id="music_wrapper">
         <header>
             <div class="main logo">
-                <a href="#">
+                <a href="../index.html">
                     <img src="../img/galaxy_music-logo.png" alt="">
                 </a>
             </div>
@@ -116,8 +116,8 @@
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-user"></i></a>
                     <ul>
-                        <li><a href="#">ログイン</a></li>
-                        <li><a href="#">新規登録</a></li>
+                        <li><a href="./login.html">ログイン</a></li>
+                        <li><a href="./terms.html">新規登録</a></li>
                         <li><a href="#">ログアウト</a></li>
                         <li><a href="#">MYページ</a></li>
                         <li><a href="#">カート</a></li>
@@ -132,13 +132,118 @@
         <main class="register">
             <section>
                 <div class="select">
-                    <h3>HOME > </h3><span>新規登録</span>
+                    <h3>HOME > 新規登録 > </h3><span>情報入力</span>
                 </div>
                 <div class="content_box">
-                    <div>
+                    <div class="title">
                         <h4>新規登録</h4>
+                        <div>
+                            <label>
+                                <span>01</span>
+                                <span>会員登録規約同意</span>
+                                <span><i class="fas fa-angle-right"></i></span>
+                            </label>
+                            <label>
+                                <span>02</span>
+                                <span>情報入力</span>
+                                <span><i class="fas fa-angle-right"></i></span>
+                            </label>
+                            <label>
+                                <span>03</span>
+                                <span>登録完了</span>
+                            </label>
+                        </div>
                     </div>
-                    
+                    <section>
+                        <div>
+                            <h5>基本情報</h5>
+                            <label>
+                                <strong class="asterisk">*</strong>
+                                <span>表示は必ず入力してください。</span>
+                            </label>
+                        </div>
+                        <form action="#">
+                            <div class="member_register">
+                                <table border="0">
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>ID</span>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="uid" placeholder="IDを入力してください。">
+                                            <span class="resultuid"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>パスワード</span>
+                                        </td>
+                                        <td>
+                                            <input type="password" name="pass" placeholder="パスワードを入力してください。">
+                                            <span class="resultpass1"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>パスワード確認</span>
+                                        </td>
+                                        <td>
+                                            <input type="password" name="pass" placeholder="もう一度入力してください。">
+                                            <span class="resultpass2"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>お名前</span>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="name" placeholder="お名前を入力してください。">
+                                            <span class="resultname"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>E-mail</span>
+                                        </td>
+                                        <td>
+                                            <input type="email" name="email" placeholder="メールを入力してください。">
+                                            <span class="resultemail"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>携帯電話</span>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="hp" placeholder="携帯電話を入力してください。">
+                                            <span class="resulthp"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong class="asterisk">*</strong>
+                                            <span>住所</span>
+                                        </td>
+                                        <td>
+                                            <input type="text" name="zip" placeholder="郵便番号を入力してください。">
+                                            <input type="button" name="btnzip" value="検索">
+                                            <input type="text" name="addr1">
+                                            <input type="text" name="addr2" placeholder="詳細を入力してください。">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="resultbtn">
+                                <input type="submit" name="resultbtn" value=">会員情報を登録する<">
+                            </div>
+                        </form>
+                    </section>
                 </div>
             </section>
         </main>

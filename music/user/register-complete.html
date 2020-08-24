@@ -7,26 +7,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script><!--최신 폰트어썸-->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="/music/js/slider.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script>
-        $(document).ready(function(){
-            $('.slider > ul').bxSlider({
-                auto: true,
-                mode: 'fade',
-                pager: false,
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="/music/css/style.css">
 </head>
 <body>
     <div id="music_wrapper">
         <header>
             <div class="main logo">
-                <a href="./index.html">
-                    <img src="./img/galaxy_music-logo.png" alt="">
+                <a href="../index.html">
+                    <img src="../img/galaxy_music-logo.png" alt="">
                 </a>
             </div>
             <div class="main menu">
@@ -113,8 +104,8 @@
                     <a href="#"><i class="fas fa-search"></i></a>
                     <a href="#"><i class="fas fa-user"></i></a>
                     <ul>
-                        <li><a href="./user/login.html">ログイン</a></li>
-                        <li><a href="./user/terms.html">新規登録</a></li>
+                        <li><a href="./login.html">ログイン</a></li>
+                        <li><a href="./terms.html">新規登録</a></li>
                         <li><a href="#">ログアウト</a></li>
                         <li><a href="#">MYページ</a></li>
                         <li><a href="#">カート</a></li>
@@ -123,101 +114,41 @@
                 </div>
             </div>
         </header>
-        <main class="index">
-            <section class="slider">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <img src="./img/violin_image.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/viola_image.jpg" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="./img/cello_image.jpg" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="content">
-                <div class="string_instrument">
-                    <p>弦楽器</p>
-                    <span>幅広い音域と 感性的音色</span>
-                    <img src="./img/violin_banner.png" alt="">
+        <section class="header_image">
+            <span>楽器はGalaxy...</span>
+        </section>
+        <main class="register_complete">
+            <section>
+                <div class="select">
+                    <h3>HOME > 新規登録 > </h3><span>登録完了</span>
                 </div>
-                <div class="banner">
-                    <div>
-                        <ul>
-                            <li><a href="#"><img src="https://dummyimage.com/290x230/ebebeb/4d4d4d&text=230x230+product+image" alt=""></a></li>
-                            <li><a href="#"><img src="https://dummyimage.com/290x230/ebebeb/4d4d4d&text=230x230+product+image" alt=""></a></li>
-                            <li><a href="#"><img src="https://dummyimage.com/290x230/ebebeb/4d4d4d&text=230x230+product+image" alt=""></a></li>
-                            <li><a href="#"><img src="https://dummyimage.com/290x230/ebebeb/4d4d4d&text=230x230+product+image" alt=""></a></li>
-                        </ul>
+                <div class="content_box">
+                    <div class="title">
+                        <h4>新規登録</h4>
+                        <div>
+                            <label>
+                                <span>01</span>
+                                <span>会員登録規約同意</span>
+                                <span><i class="fas fa-angle-right"></i></span>
+                            </label>
+                            <label>
+                                <span>02</span>
+                                <span>情報入力</span>
+                                <span><i class="fas fa-angle-right"></i></span>
+                            </label>
+                            <label>
+                                <span>03</span>
+                                <span>登録完了</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="qna">
-                        <h3>QnA</h3>
-                        <p>
-                            <span>more</span>
-                            <i class="fas fa-chevron-right"></i>
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">入金はどうすればいいですか？</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">入金はどうすればいいですか？</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">入金はどうすればいいですか？</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">入金はどうすればいいですか？</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">入金はどうすればいいですか？</a>
-                                <span>2020-08-19</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="notice">
-                        <h3>お知らせ</h3>
-                        <p>
-                            <span>more</span>
-                            <i class="fas fa-chevron-right"></i>
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="#">新しいホームページをオープンしました。</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">新しいホームページをオープンしました。</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">新しいホームページをオープンしました。</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">新しいホームページをオープンしました。</a>
-                                <span>2020-08-19</span>
-                            </li>
-                            <li>
-                                <a href="#">新しいホームページをオープンしました。</a>
-                                <span>2020-08-19</span>
-                            </li>
-                        </ul>
-                    </div>
+                    <section>
+                        <div class="member_result">
+                            <p>会員登録が完了しました。<i class="far fa-smile"></i></p>
+                            <span>~メインページへお戻りください。~</span>
+                        </div>
+                        <button onClick="parent.location.href='../index.html'">>メインページへ<</button>
+                    </section>
                 </div>
             </section>
         </main>

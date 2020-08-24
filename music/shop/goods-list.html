@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GalaxyMusic</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script><!--최신 폰트어썸-->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="/music/js/slider.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="/music/css/style.css">
+    <link rel="stylesheet" href="/music/shop/css/shop_style.css">
+    <style>
+        
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div id="music_wrapper">
+        <header>
+            <div class="main logo">
+                <a href="../index.html">
+                    <img src="../img/galaxy_music-logo.png" alt="">
+                </a>
+            </div>
+            <div class="main menu">
+                <ul>
+                    <li>
+                        <a href="#">弦楽器</a>
+                        <ol class="dept01">
+                            <li><a href="#">バイオリン</a></li>
+                            <li><a href="#">チェロ</a></li>
+                            <li><a href="#">ビオラ</a></li>
+                            <li><a href="#">ウクレレ</a></li>
+                            <li><a href="#">エレキギター</a></li>
+                            <li><a href="#">ギター</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">小道具</a>
+                        <ol class="dept01">
+                            <li><a href="#">弓</a></li>
+                            <li><a href="#">松脂</a></li>
+                            <li><a href="#">肩当て</a></li>
+                            <li><a href="#">弦</a></li>
+                            <li><a href="#">その他</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">ケース</a>
+                        <ol class="dept01">
+                            <li><a href="#">バイオリン</a></li>
+                            <li><a href="#">チェロ</a></li>
+                            <li><a href="#">ビオラ</a></li>
+                            <li><a href="#">ウクレレ</a></li>
+                            <li><a href="#">エレキギター</a></li>
+                            <li><a href="#">ギター</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">共通用品</a>
+                        <ol class="dept01">
+                            <li><a href="#">譜面台</a></li>
+                            <li><a href="#">メトロノーム</a></li>
+                            <li><a href="#">チューナー</a></li>
+                            <li><a href="#">文具</a></li>
+                            <li><a href="#">その他</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">メニュー５</a>
+                        <ol class="dept01">
+                            <li><a href="#">サブ１</a></li>
+                            <li><a href="#">サブ２</a></li>
+                            <li><a href="#">サブ３</a></li>
+                            <li><a href="#">サブ４</a></li>
+                            <li><a href="#">サブ５</a></li>
+                            <li><a href="#">サブ６</a></li>
+                            <li><a href="#">サブ７</a></li>
+                            <li><a href="#">サブ８</a></li>
+                            <li><a href="#">サブ９</a></li>
+                            <li><a href="#">サブ１0</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="main member">
+                <div>
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <ul>
+                        <li><a href="./login.html">ログイン</a></li>
+                        <li><a href="./terms.html">新規登録</a></li>
+                        <li><a href="#">ログアウト</a></li>
+                        <li><a href="#">MYページ</a></li>
+                        <li><a href="#">カート</a></li>
+                    </ul>
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </div>
+            </div>
+        </header>
+        <section class="header_image">
+            <span>楽器はGalaxy...</span>
+        </section>
+        <main class="goods_list">
+            <section class="content_title">
+                <div class="select">
+                    <h3>HOME > </h3>
+                    <select id="selectbox">
+                        <option value="val1">弦楽器</option>
+                        <option value="val2">小道具</option>
+                        <option value="val3">ケース</option>
+                        <option value="val4">共通用品</option>
+                        <option value="val5">メニュー５</option>
+                    </select>
+                </div>
+                <div class="list_title">
+                    <h3>弦楽器</h3>
+                </div>
+                <div class="sub_list_title">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>バイオリン</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>チェロ</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>ビオラ</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>ウクレレ</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>エレキギター</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>ギター</span>
+                                <em>(5)</em>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="content_box">
+                <span>
+                    商品
+                    <strong>10</strong>
+                    個
+                </span>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">新着順</a>
+                        </li>
+                        <li>
+                            <a href="#">人気順</a>
+                        </li>
+                        <li>
+                            <a href="#">価格が安い順</a>
+                        </li>
+                        <li>
+                            <a href="#">価格が高い順</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="goods_content">
+                                <div class="goods_image">
+                                    <a href="#">
+                                        <img src="./img/violin_item_t4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="goods_title">
+                                    <div>
+                                        <a href="#">バイオリン1.バイオリン1.バイオリン1.バイオリン1</a>
+                                    </div>
+                                    <div>
+                                        <span>370,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="paging_btn">
+                    <ul>
+                        <li>
+                            <a href="#">이전</a>
+                        </li>
+                        <li>
+                            <a href="#" class="on">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">6</a>
+                        </li>
+                        <li>
+                            <a href="#">다음</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <div class="introduce">
+                    <ul>
+                        <li><a href="#">会社概要</a></li>
+                        <li><a href="#">利用規約</a></li>
+                        <li><a href="#">プライバシーポリシー</a></li>
+                        <li><a href="#">通信販売のご案内</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="companyinfo">
+                    <div>
+                        <div>
+                            <h3>
+                                お問い合わせ
+                            </h3>
+                            <strong>
+                                0120-123-1234
+                            </strong>
+                            <p>
+                                平日&nbsp;&nbsp;&nbsp; :  午前 O9:OO ~ 午後 17:OO<br>
+                                土曜日 :  午前 O9:OO ~ 午後 17:OO<br>
+                                休業日 : 日曜日、祝日
+                            </p>
+                        </div>
+                        <div>
+                            <h3>お支払い</h3>
+                            <p>
+                                OO銀行&nbsp;池袋支部 普通口座 1234567 (株)ギャラクシー楽器<br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <p>
+                            copyright (c) galaxymusic all rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
