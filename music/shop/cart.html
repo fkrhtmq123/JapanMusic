@@ -8,10 +8,19 @@
     <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script><!--최신 폰트어썸-->
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="../js/slider.js"></script>
-    <script src="../js/terms.js"></script>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/shop_style.css">
+    <script>
+        $(document).ready(function(){
+            $('.slider > ul').bxSlider({
+                auto: true,
+                mode: 'fade',
+                pager: false,
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="music_wrapper">
@@ -118,59 +127,130 @@
         <section class="header_image">
             <span>楽器はGalaxy...</span>
         </section>
-        <main class="terms">
+        <main class="cart">
             <section>
                 <div class="select">
-                    <h3>HOME > 新規登録 > </h3><span>会員登録規約同意</span>
+                    <h3>HOME > </h3><span>カート</span>
                 </div>
                 <div class="content_box">
                     <div class="title">
-                        <h4>新規登録</h4>
+                        <h4>カート</h4>
                         <div>
                             <label>
                                 <span>01</span>
-                                <span>会員登録規約同意</span>
+                                <span>カート</span>
                                 <span><i class="fas fa-angle-right"></i></span>
                             </label>
                             <label>
                                 <span>02</span>
-                                <span>情報入力</span>
+                                <span>注文・決済</span>
                                 <span><i class="fas fa-angle-right"></i></span>
                             </label>
                             <label>
                                 <span>03</span>
-                                <span>登録完了</span>
+                                <span>注文完了</span>
                             </label>
                         </div>
                     </div>
-                    <div class="member_terms">
-                        <div>
-                            <h2>会員登録規約同意</h2>
+                    <section>
+                        <div class="order_goods_check">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="goods_check">
+                                    </th>
+                                    <th>
+                                        商品情報
+                                    </th>
+                                    <th>
+                                        数量
+                                    </th>
+                                    <th>
+                                        単価(税込)
+                                    </th>
+                                    <th>
+                                        割引・ポイント
+                                    </th>
+                                    <th>合計</th>
+                                    <th>配送料</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="goods_check">
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <div class="pick_goods_image">
+                                                <a href="#">
+                                                    <img src="./img/violin_item_t1.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="pick_goods_title">
+                                                <a href="#">
+                                                    バイオリン1.バイオリン1.バイオリン1.バイオリン1
+                                                </a>
+                                                <span>サイズ : 4/4</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="pick_goods_count">
+                                        <div>
+                                            <strong>1</strong>
+                                            <div>
+                                                <a href="#">オプション・数量変更</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p>198,000</p>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <p>198,000</p>
+                                    </td>
+                                    <td>無料配送</td>
+                                </tr>
+                            </table>
                         </div>
-                        <div class="privacy">
-                            <input type="checkbox" name="box">
+                        <div class="shopping">
+                            <a href="#">
+                                <&nbsp;ショッピングを続ける
+                            </a>
+                        </div>
+                        <div class="order_price">
                             <div>
-                                <span>(必須)</span>
-                                <em>プライバシーポリシー</em>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            総
+                                            <span>1</span>
+                                            個の単価
+                                        </p>
+                                        <span>198,000</span>
+                                    </li>
+                                    <li><i class="fas fa-plus"></i></li>
+                                    <li>
+                                        <p>配送料</p>
+                                        <span>0</span>
+                                    </li>
+                                    <li><i class="fas fa-equals"></i></li>
+                                    <li>
+                                        <p>合計</p>
+                                        <span>198,000</span>
+                                    </li>
+                                </ul>
                             </div>
-                            <textarea name="privacy" style="resize: none" readonly></textarea>
                         </div>
-                        <div class="terms">
-                            <input type="checkbox" name="box">
-                            <div>
-                                <span>(必須)</span>
-                                <em>会員規約</em>
+                        <div class="order_check">
+                            <div class="pick_goods_del">
+                                <a href="#">選択商品削除</a>
                             </div>
-                            <textarea name="terms" style="resize: none" readonly></textarea>
+                            <div class="pick_goods_order">
+                                <a href="#">選択商品を注文</a>
+                                <a href="#">全体商品を注文</a>
+                            </div>
                         </div>
-                        <div>
-                            <input type="checkbox" name="allcheck">
-                            <span>すべて同意します。<p>(選択項目も含まれます。)</p></span>
-                        </div>
-                    </div>
-                    <div>
-                        <a href="./register.html">>次へ<</a>
-                    </div>
+                    </section>
                 </div>
             </section>
         </main>

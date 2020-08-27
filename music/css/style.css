@@ -218,15 +218,15 @@ main {
     display: inline-block;
     font-size: 25px;
 }
-.index > .content > div:last-child > div > p {
+.index > .content > div:last-child > div > a {
     float: right;
     margin-top: 10px;
     font-size: 14px;
 }
-.index > .content > div:last-child > div > p > span {
+.index > .content > div:last-child > div > a > span {
     margin-right: 10px;
 }
-.index > .content > div:last-child > div > p > i {}
+.index > .content > div:last-child > div > a > i {}
 .index > .content > div:last-child > div > ul {
     width: 100%;
     height: auto;
