@@ -24,17 +24,29 @@
     </style>
     <script>
         $(document).ready(function(){
-            var kind = $("#kind");
-
-            if(kind.val("1").prop("selected", true)) {
-                $('.stringed').addClass(on)
-            } else if(kind.val("2").prop("selected", true)) {
-                $('.tools').addClass(on)
-            } else if(kind.val("3").prop("selected", true)) {
-
-            } else if(kind.val("4").prop("selected", true)) {
-
-            }
+           $('#kind').change(function(){
+                if($(this).val() == 1) {
+                    $('.stringed').addClass('on');
+                    $('.tools').removeClass('on');
+                    $('.case').removeClass('on');
+                    $('.goods').removeClass('on');
+                } else if($(this).val() == 2) {
+                    $('.stringed').removeClass('on');
+                    $('.tools').addClass('on');
+                    $('.case').removeClass('on');
+                    $('.goods').removeClass('on');
+                } else if($(this).val() == 3) {
+                    $('.stringed').removeClass('on');
+                    $('.tools').removeClass('on');
+                    $('.case').addClass('on');
+                    $('.goods').removeClass('on');
+                } else if($(this).val() == 4) {
+                    $('.stringed').removeClass('on');
+                    $('.tools').removeClass('on');
+                    $('.case').removeClass('on');
+                    $('.goods').addClass('on');
+                }
+           })
         });
     </script>
 </head>
