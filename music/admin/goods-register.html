@@ -10,17 +10,78 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./css/admin.css">
     <style>
-        #main > div > div > form > table tr > td > select {
+        #goods_register {
+            float: right;
+            width: 1130px;
+            min-height: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #goods_register > nav {
+            border-bottom: 1px solid #c0c0c0;
+            margin-bottom: 16px;
+            overflow: hidden;
+        }
+        #goods_register > nav > h3 {
+            float: left;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        #goods_register > nav > p {
+            float: right;
+            margin-top: 10px;
+        }
+        #goods_register > div > div > form {
+            width: 800px;
+        }
+        #goods_register > div > div > form > table {
+            width: 100%;
+        }
+        #goods_register > div > div > form > table tr > th {
+            width: 105px;
+            padding: 10px 20px 10px 20px;
+            font-size: 16px;
+            background: #e7e4e4;
+        }
+        #goods_register > div > div > form > table tr > td {
+            padding: 10px;
+            font-size: 16px;
+        }
+        #goods_register > div > div > form > table tr > td > input {
+            width: 200px;
+            height: 20px;
+        }
+        #goods_register > div > div > form > table tr > td > input[type=submit] {
+            width: 120px;
+            height: 50px;
+            font-size: 18px;
+        }
+        #goods_register > div > div > form > table tr > td > input[type=checkbox] {
+            width: 50px;
+        }
+        .select_sub > td > select {
+            float: left;
             display: none;
         }
-
-        #main > div > div > form > table tr > td > #kind {
+        .select_sub > td > select.on {
             display: block;
         }
-
-        #main > div > div > form > table tr > td > select.on {
+        .preview {
             display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
+        .preview_image {
+            width: 150px;
+            height: 150px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        #goods_register {}
+        #goods_register {}
+        #goods_register {}
+        #goods_register {}
+        
     </style>
     <script>
         $(document).ready(function(){
@@ -100,7 +161,7 @@
                     </li>
                 </ul>
             </aside>
-            <section id="main">
+            <section id="goods_register">
                 <nav>
                     <h3>商品登録</h3>
                     <p>
@@ -130,7 +191,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="select_sub">
                                     <th>商品分類</th>
                                     <td>
                                         <select class="stringed on">
@@ -141,8 +202,6 @@
                                             <option>エレキギター</option>
                                             <option>ギター</option>
                                         </select>
-                                    </td>
-                                    <td>
                                         <select class="tools">
                                             <option>弓</option>
                                             <option>松脂</option>
@@ -150,8 +209,6 @@
                                             <option>弦</option>
                                             <option>その他</option>
                                         </select>
-                                    </td>
-                                    <td>
                                         <select class="case">
                                             <option>バイオリン</option>
                                             <option>チェロ</option>
@@ -160,8 +217,6 @@
                                             <option>エレキギター</option>
                                             <option>ギター</option>
                                         </select>
-                                    </td>
-                                    <td>
                                         <select class="goods">
                                             <option>譜面台</option>
                                             <option>メトロノーム</option>
@@ -173,15 +228,26 @@
                                 </tr>
                                 <tr>
                                     <th>定価</th>
-                                    <td><input type="text"></td>
+                                    <td>
+                                        <input type="text">
+                                        円
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>販売価格</th>
-                                    <td><input type="text"></td>
+                                    <td>
+                                        <input type="text">
+                                        円
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>配送料</th>
-                                    <td><input type="text"></td>
+                                    <td>
+                                        <input type="text">
+                                        円
+                                        <input type="checkbox">
+                                        (無料配送のはチェックしてください。)
+                                    </td>
                                 </tr>
                                 <tr>
                                     <th>ブランド</th>
@@ -190,6 +256,30 @@
                                 <tr>
                                     <th>原産地</th>
                                     <td><input type="text"></td>
+                                </tr>
+                                <tr>
+                                    <th>商品イメージ</th>
+                                    <td>
+                                        <input type="file">
+                                        <div>
+                                            <span class="preview">preview</span>
+                                            <div class="preview_image"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>補助イメージ</th>
+                                    <td>
+                                        <input type="file">
+                                        <input type="file">
+                                        <input type="file">
+                                        <input type="file">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="right">
+                                        <input type="submit" value="商品登録">
+                                    </td>
                                 </tr>
                             </table>
                         </form>
